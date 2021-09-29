@@ -18,7 +18,7 @@ router.get('/api/vacs', async (req, res) => {
 
 router.post('/api/vacs', async (req, res) => {
   console.log(req.body);
-  const { title, company, price, imageUrl, description } = req.body;
+  const { title, company, price, imageUrl, description, name } = req.body;
 
   const newVac = new VaccineModel({
     title, company, price, imageUrl, description
